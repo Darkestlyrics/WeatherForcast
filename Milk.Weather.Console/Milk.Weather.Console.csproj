@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Milk.Weather.Data\Milk.Weather.Data.csproj" />
+    <ProjectReference Include="..\Milk.Weather.Domain\Milk.Weather.Domain.csproj" />
+    <ProjectReference Include="..\Milk.Weather.UseCase\Milk.Weather.UseCase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="city.list.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

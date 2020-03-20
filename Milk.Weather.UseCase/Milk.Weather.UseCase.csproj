@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.13.1" />
+    <PackageReference Include="StoneAge.CleanArchitecture.Domain.DotNetCore" Version="4.0.6" />
+    <PackageReference Include="StoneAge.CleanArchitecture.DotNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Milk.Weather.Domain\Milk.Weather.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

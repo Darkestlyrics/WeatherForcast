@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="city.list.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="city.list.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Milk.Weather.Data\Milk.Weather.Data.csproj" />
+    <ProjectReference Include="..\Milk.Weather.Domain\Milk.Weather.Domain.csproj" />
+    <ProjectReference Include="..\Milk.Weather.UseCase\Milk.Weather.UseCase.csproj" />
+  </ItemGroup>
+
+
+</Project>
